@@ -1,0 +1,268 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.attribution {
+  font-size: 16px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(5, 85%, 63%);
+  text-decoration: none;
+}
+.globalnav {
+  max-width: 850px;
+  margin: 30px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo img {
+  height: 38px;
+}
+.navlinks {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.navlinks li,
+li a {
+  list-style: none;
+  color: hsl(236, 13%, 42%);
+  font-size: 14px;
+  display: inline block;
+  text-decoration: none;
+  transition: 0.2s ease-in-out;
+}
+li a:hover {
+  color: hsl(5, 85%, 63%);
+}
+main {
+  display: flex;
+  max-width: 850px;
+  margin: 20px auto;
+}
+.hero,
+.new {
+  height: 400px;
+}
+.hero-img-desktop img {
+  display: block;
+  max-width: auto;
+  height: 235px;
+}
+
+@media screen and (min-width: 1000px) {
+  .hero-img-mobile,
+  .nav-toggle,.nav-close {
+    display: none;
+  }
+  
+}
+@media screen and (max-width: 999px) {
+  .hero-img-desktop {
+    display: none;
+  }
+  .nav-close {
+    display: none;
+  }
+  .globalnav {
+    width: 350px;
+    display: flex;
+    justify-content: space-between;
+    margin: 30px auto;
+  }
+
+  .navlinks {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 120px;
+    z-index: 1;
+    background-color: white;
+    padding-top: 30%;
+  
+  }
+  .navlinks li a{
+    display: block;
+    font-size: 24px;
+    padding: 10px;
+    margin: 10px;
+  
+  }
+  
+}
+
+.hero-text {
+  font-size: 40px;
+  margin-top: 10px;
+  color: hsl(240, 100%, 5%);
+  font-weight: 900;
+}
+
+.action p {
+  font-size: 15px;
+  padding: 5px;
+  color: hsl(236, 13%, 42%);
+  margin-top: 10px;
+}
+.action button {
+  padding: 10px;
+  margin: 20px 0 10px 0;
+  width: 140px;
+  color: #ffff;
+  border: none;
+  background-color: hsl(5, 85%, 63%);
+  transition: 0.3s ease-in-out;
+}
+button:hover {
+  background-color: hsl(240, 100%, 5%);
+  cursor: pointer;
+}
+
+.grid {
+  max-width: 600px;
+  padding: 5px;
+  display: grid;
+  column-gap: 25px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 150px;
+}
+
+.new {
+  background-color: hsl(240, 100%, 5%);
+  margin-left: 20px;
+}
+.aside-head {
+  color: hsl(35, 77%, 62%);
+  padding: 10px;
+  margin: 15px;
+}
+
+.aside-contents {
+  border-bottom: 1px solid hsl(233, 8%, 79%);
+  margin: 10px;
+  padding: 10px;
+}
+.aside-contents:last-child {
+  border: none;
+}
+h3 {
+  color: hsl(36, 100%, 99%);
+  padding: 5px;
+  font-size: 16px;
+}
+h4 {
+  color: hsl(233, 8%, 79%);
+  font-size: 12px;
+  padding: 5px;
+  line-height: 1.5em;
+}
+.reviews {
+  max-width: 850px;
+  margin: 50px auto 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 80px;
+  column-gap: 42px;
+}
+.one,
+.two,
+.three {
+  display: flex;
+}
+
+.review-text {
+  margin-left: 15px;
+}
+span {
+  color: hsl(233, 8%, 79%);
+  font-size: 20px;
+  font-weight: 800;
+}
+.review-text a {
+  margin: 5px auto;
+  text-decoration: none;
+  color: hsl(240, 100%, 5%);
+  font-size: 12px;
+  font-weight: 900;
+  transition: 0.1s ease-in-out;
+}
+.review-text a:hover {
+  color: hsl(5, 85%, 63%);
+}
+h6 {
+  font-size: 12px;
+  color: hsl(236, 13%, 42%);
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    }
+   .show {
+     display: block; 
+    width: 60%;
+    color: black;
+    height: 80vh; 
+  } 
+  
+  .hero-img-mobile img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 250;
+    margin: 0 auto;
+    height: 350px;
+  }
+  main {
+    flex-direction: column;
+    max-width: 400px;
+    align-items: center;
+    justify-content: center;
+  }
+  .grid {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    margin: auto;
+    max-height: 350px;
+    justify-content: center;
+    align-items: center;
+  }
+  .hero-text {
+    font-size: 55px;
+  }
+  .action p {
+    font-size: 16px;
+  }
+  .new {
+    display: block;
+    margin: auto;
+    margin-top: 90%;
+    width: 350px;
+    height: 400px;
+  }
+  .reviews {
+    width: 400px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .one,
+  .two,
+  .three {
+    margin: 15px auto;
+    width: 350px;
+  }
+  footer {
+    padding: 10px;
+  }
+}
