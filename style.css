@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
 }
 
 .attribution {
@@ -47,7 +48,7 @@ main {
 }
 .hero,
 .new {
-  height: 400px;
+  height: auto;
 }
 .hero-img-desktop img {
   display: block;
@@ -145,7 +146,7 @@ button:hover {
 .aside-contents {
   border-bottom: 1px solid hsl(233, 8%, 79%);
   margin: 10px;
-  padding: 10px;
+  padding: 3px;
 }
 .aside-contents:last-child {
   border: none;
