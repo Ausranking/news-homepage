@@ -163,7 +163,7 @@ h4 {
 }
 .reviews {
   max-width: 850px;
-  margin: 50px auto 20px;
+  margin: 50px auto ;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 80px;
@@ -250,7 +250,7 @@ h6 {
   }
   .reviews {
     width: 400px;
-    margin: auto;
+    margin:20px auto;
     display: flex;
     justify-content: center;
     align-items: center;
